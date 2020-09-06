@@ -12,8 +12,6 @@ half <- filter(dressed_as,type=='half')
 #ggplot(full,aes(1,total_time_in_secs)) + geom_beeswarm(dodge.width=.8,cex=2)
 #ggplot(half,aes(1,total_time_in_secs)) + geom_beeswarm(dodge.width=.8,cex=2.5)
 
-
-
 # Build plots for full & half
 # then extract the x co-ordinate data
 h <- ggplot(half,aes(1,total_time_in_secs)) + geom_beeswarm(dodge.width=.8,cex=2)
