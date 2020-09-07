@@ -26,6 +26,8 @@ dressed_as <- filter(dressed_as,!grepl('fixed seat row',tolower(dressed_as$desc)
 dressed_as <- filter(dressed_as,!grepl('inline skating',tolower(dressed_as$desc)))
 dressed_as <- filter(dressed_as,!grepl('dribbling',tolower(dressed_as$desc)))
 dressed_as <- filter(dressed_as,!grepl('robotic walking',tolower(dressed_as$desc)))
+dressed_as <- filter(dressed_as,!grepl('skipping',tolower(dressed_as$desc)))
+dressed_as <- filter(dressed_as,!grepl('relay team',tolower(dressed_as$desc)))
 dressed_as <- filter(dressed_as,!is.na(time_string))
 
 test <- dressed_as
@@ -44,5 +46,16 @@ dressed_as$time <- paste0(
 
 dressed_as$type <- if_else(grepl('half',dressed_as$desc),'half','full')
 dressed_as$total_time_in_secs <- dressed_as$hour*(60*60) + dressed_as$min*(60) + dressed_as$sec
+
+# Finding outfits
+dressed_as$desc <- gsub('  ',' ',dressed_as$desc)
+
+extra_text <- '(Fastest (half ){0,1}marathon (dressed ){0,1}((as a )|(as an )|(as )|(in a )|(in an )|(in )|(by a )|(wearing a )|(wearing )))|(Fastest (half ){0,1}marathon )'
+dressed_as$outfit <- gsub(extra_text,'',dressed_as$desc)
+
+dressed_as$outfit[dressed_as$outfit=='distance (male)'] <- 'any outfit (male)'
+dressed_as$outfit[dressed_as$outfit=='(female, masters 35)'] <- 'any outfit (female, masters 35)'
+
+dressed_as$last_update <- Sys.Date()
 
 write.csv(dressed_as,"data/fastest_marathon_dressed_as.csv", row.names = F)
