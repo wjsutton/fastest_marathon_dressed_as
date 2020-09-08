@@ -2,7 +2,7 @@
   The Fastest Marathon Dressed As... 
 </h1>
 
-[![Status](https://www.repostatus.org/badges/latest/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/wjsutton/fastest_marathon_dressed_as.svg)](https://github.com/wjsutton/fastest_marathon_dressed_as/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wjsutton/fastest_marathon_dressed_as.svg)](https://github.com/wjsutton/fastest_marathon_dressed_as/pulls) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/wjsutton/fastest_marathon_dressed_as.svg)](https://github.com/wjsutton/fastest_marathon_dressed_as/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wjsutton/fastest_marathon_dressed_as.svg)](https://github.com/wjsutton/fastest_marathon_dressed_as/pulls) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 Acumulating all Guinness World Records titled 'Fastest Marathon Dressed As...' for a data viz project.
 
