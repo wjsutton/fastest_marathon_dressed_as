@@ -30,7 +30,7 @@ The R scripts:
 - create the x co-ordinate for the beeswarm plot
 - save the data source to be used in Tableau
 
-See the viz on Tableau Public:<br>
+### :chart_with_upwards_trend: See the viz on Tableau Public:<br>
 <a href="https://public.tableau.com/profile/will7508#!/vizhome/Thefastestmarathondressedas___/Thefastestmarathondressedas___">
 <img src="https://pbs.twimg.com/media/EhZ_MQnXYAAOzc9?format=jpg&name=small">
 </a>
